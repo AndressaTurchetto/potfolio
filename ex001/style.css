@@ -3,27 +3,181 @@
 :root {
 
     /* CORES */
-    --cor-body: #212529;
-    --cor-background-body: #fff;
+    --bs-cor-body: #212529;
+    --bs-cor-background-body: #fff;
+    --bs-cor-links: #64a19d;
+    --bs-cor-links-hover: #50817e;
 
     /* FONTES */
-    --font-body: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --bs-font-body: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     --font-size-body: 1rem;
     --font-weight-body: 400;
     /* Altura da linha */
-    --line-height-body: 1.5;
+    --bs-line-height-body: 1.5;
+
+
+    /*Navbar configurações*/
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem.
+    --bs-navbar-cor:  rgba(0, 0, 0, 0.55);
+    --bs-navbar-cor-hover: rgba(0, 0, 0, 0.7);
+    --bs-navbar-
+
 
 }
 
+/* Configurações gerais*/
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: var(--font-body);
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-body);
-    line-height: var(--line-height-body);
-    color: var(--cor-body);
+    font-family: var(--bs-font-body);
+    font-size: var(--bs-font-size-body);
+    font-weight: var(--bs-font-weight-body);
+    line-height: var(--bs-line-height-body);
+    color: var(--bs-cor-body);
+}
+
+/*Configurações de textos*/
+h1, h2, h3, h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+h2 {
+    font-size: calc(1.325rem + 0.9vw);
+}
+
+h3 {
+    font-size: calc(1.3rem + 0.6vw);
+}
+
+h4 {
+    font-size: calc(1.275rem + 0.3vw);
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+/*Fim configurações de textos*/
+
+
+/*Configurações de listas e tabelas*/
+address {
+    margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit;
+}
+
+ol, ul {
+    padding-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ol ol, ul ul, ol ul, ul ol {
+    margin-bottom: 0;
+}
+
+small {
+    font-size: 0.875em;
+}
+
+a {
+    color: var(--cor-links);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: ;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*Configurações Tabelas*/
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: inherit;
+}
+
+label {
+    display: inline-block;
+}
+
+button {
+    border-radius: 0;
+}
+
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, section {
+    text-transform: none;
+}
+
+select {
+    word-wrap: normal;
+}
+
+select: :disabled {
+    opacity: 1;
+}
+
+::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: rgba(0, 0, 0, 0.55);
+    --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+    --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+    --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
+    --bs-navbar-toggler-border-radius: 0.375rem;
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-wrap: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
 }
